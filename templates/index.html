@@ -1,25 +1,11 @@
-{% extends "base.html" %}
-
-{% block content %}
-    <div id="top" style="position: absolute; top: 0;"></div>
-
-    <header>
-        <nav>
-            {% include "_navbar.html" %}
-        </nav>
-    </header>
-
-    <main>
-        {% set slanted = ["countdown", "sponsors"] %}
-        {% for section in ["hero", "countdown", "about", "schedule", "up_next", "sponsors", "organisers", "get_tickets"] %}
-            <section id="{{ section }}" {% if section in slanted %}class="slanted"{% endif %}>
-                {% include "_" + section + ".html" %}
-            </section>
-        {% endfor %}
-    </main>
-
-
-    <footer class="slanted">
-        {% include "_footer.html" %}
-    </footer>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+</html>
