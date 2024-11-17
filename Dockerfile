@@ -9,7 +9,8 @@ COPY . /app
 
 # Install any needed packages specified in requirements.txt
 RUN pip install poetry
-RUN pip install gunicorn
+RUN poetry config virtualenvs.create false
+RUN poetry add gunicorn
 RUN poetry install
 
 # Make port 8000 available to the world outside this container
@@ -19,4 +20,4 @@ EXPOSE 8000
 ENV FLASK_APP=app.py
 
 # Run gunicorn server
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
+CMD ["poetry", "run", "gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
