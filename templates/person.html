@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fitzmaurice Family</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/person.css">
+</head>
+<header>
+    {% include "header.html" %}
+</header>
+{%include "background.html"%}
+<main>
+    <div class="stories">
+        {% for chapter in person.chapters %}
+        <div class="chapter" id="chapter-{{ chapter.chapter }}">
+            <h2>{{ chapter.title }}</h2>
+            <h3>{{ chapter.author }}</h3>
+            <p>
+                {{ chapter.content|safe }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</main>

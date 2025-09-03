@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    font-family: 'Montserrat';
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.stories {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.chapter {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
