@@ -3,16 +3,16 @@
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 20%;
-        height: auto;
+        height: 70%;
+        width: auto;
         z-index: -1;
     }
     #rplant {
         position: fixed;
         top: 0;
         right: 0;
-        width: 20%;
-        height: auto;
+        height: 70%;
+        width: auto;
         z-index: -1;
     }
 }

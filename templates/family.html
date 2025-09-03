@@ -1,0 +1,13 @@
+{% for person in family %}
+    <div class="person" id="{% if loop.index is odd %}left{% else %}right{% endif %}">
+        <div class="picture">
+            <img src="{{ person.picture }}" alt="{{ person.name }}">
+        </div>
+        <div class="info">
+            <h2>{{ person.name }}</h2>
+            <p>{{ person.bio }}</p>
+            <a href="{{ person.siteref }}">Learn more</a>
+        </div>
+    </div>
+{% endfor %}
+<p>Family template</p>

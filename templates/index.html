@@ -4,8 +4,8 @@
     <header>
         {% include "header.html" %}
     </header>
-    <div class="background">
-        <img src="/public/imgs/lplant.svg" id="lplant" alt="The Fitzmaurice Family">
-        <img src="/public/imgs/rplant.svg" id="rplant" alt="The Fitzmaurice Family">
-    </div>
+    {%include "background.html"%}
+    <main>
+        {% include "family.html" %}
+    </main>
 {%endblock%}

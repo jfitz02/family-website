@@ -1,0 +1,33 @@
+.person {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    .picture {
+        img {
+            height: 30vh;
+            width: auto;
+            border-radius: 50%;
+            border: 5px solid #9ADD9A;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .info {
+        background-color: beige;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 400px;
+    }
+}
+
+.person#left {
+    flex-direction: row;
+}
+.person#right {
+    flex-direction: row-reverse;
+}
